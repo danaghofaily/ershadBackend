@@ -27,7 +27,7 @@ app.use((req, res, next) => {
 
 const { type } = require('os');
 
-mongoose.connect('mongodb+srv://muzammilbeconite:Bd6RCUx99jopn0ru@cluster0.7vzgufg.mongodb.net/User', {
+mongoose.connect('mongodb+srv://ershad:ershad123@cluster0.hsnhi65.mongodb.net/ershad', {
 })
 .then(() => {
     console.log('Connected to MongoDB');
@@ -39,15 +39,15 @@ mongoose.connect('mongodb+srv://muzammilbeconite:Bd6RCUx99jopn0ru@cluster0.7vzgu
 app.use(express.json());
 
 // Mount the user routes
-app.use('/api', UserRoutes);
-app.use('/api', tourGuideRoutes);
-app.use('/api',bookingRoute);
+app.use('/api', UserRoutes);   //done
+app.use('/api', tourGuideRoutes);  //done
+app.use('/api',bookingRoute);  //done
 app.use('/api',activityRoute);
 app.use('/api',wishListRoute);
-app.use('/api',touristRoute);
-app.use('/api',eventRoute);
-app.use('/api',tourRoute);
-app.use('/api',reviewRoute);
+app.use('/api',touristRoute);   //done
+app.use('/api',eventRoute);    //done
+app.use('/api',tourRoute);      //done
+app.use('/api',reviewRoute);   //done
 app.use('/api',paymentRoute);
 
 

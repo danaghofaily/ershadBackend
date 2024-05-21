@@ -11,7 +11,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB connection
-const mongoUri = 'mongodb+srv://muzammilbeconite:Bd6RCUx99jopn0ru@cluster0.7vzgufg.mongodb.net/User'; // Ensure this is set in your Netlify environment variables
+const mongoUri = 'mongodb+srv://ershad:ershad123@cluster0.hsnhi65.mongodb.net/ershad';
 mongoose.connect(mongoUri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
